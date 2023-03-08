@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.hero {
+    background-color: lightblue;
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 4px solid #000;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+
+aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#cardsDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    background: teal;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+input {
+    padding: 5px;
+}
