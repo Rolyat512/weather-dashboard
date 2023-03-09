@@ -9,7 +9,6 @@ const handleSearch = async () => {
     let { list } = await (await fetch(url)).json()
 
     let { dt, main: { temp, humidity }, wind: {speed }, weather:[{icon}] } = list[0];
-
     current.innerHTML = `
         <h1>${city} (${new Date(dt*1000).toDateString()}) <img src="https://openweather.org/image/${icon}.png"> </h1>
         <h3>Temp: ${temp} F</h3>
